@@ -1,2 +1,13 @@
 # building-dev-environment-terraform
-Building a Dev environment  with AWS and Terraform
+In this lab, we are building a simple development environment using Visual Studio Code, AWS, and Terraform. This environment includes:
+
+VPC
+
+Internet Gateway
+
+Public Route table
+
+Public subnet 
+
+Dev Node
+
