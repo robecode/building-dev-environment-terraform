@@ -12,7 +12,7 @@ provider "aws" {
 }
 
 resource "aws_vpc" "mtc1_vpc" {
-  cidr_block           = "10.123.0.0/16"
+  cidr_block           = "10.0.0.0/0" ## IP Address
   enable_dns_hostnames = true
   enable_dns_support   = true
 
@@ -23,7 +23,7 @@ resource "aws_vpc" "mtc1_vpc" {
 
 resource "aws_subnet" "mtc1_public_subnet" {
   vpc_id                  = aws_vpc.mtc1_vpc.id
-  cidr_block              = "10.123.1.0/24"
+  cidr_block              = "10.0.0.0/0" ## IP Address
   map_public_ip_on_launch = true
   availability_zone       = "us-east-1a"
 
